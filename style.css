@@ -33,3 +33,24 @@
    p { margin: 0 0 1rem; max-width: 60ch; }
    ul { list-style: none; margin: 0; padding: 0; }
    a { color: inherit; }
+
+   /* ---------- Header (Flexbox) ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  padding: 0.8rem var(--gutter);
+  color: #fff;
+  background: var(--color-ink);
+}
+.logo { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; text-decoration: none; }
+.nav-list { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+.nav-list a { text-decoration: none; font-weight: 500; }
+.nav-list a:hover { color: var(--color-accent); }
+.nav-cta { padding: 0.4rem 1rem; border: 1px solid var(--color-accent); border-radius: var(--radius); }
+.nav-cta:hover { color: var(--color-ink); background: var(--color-accent); }
