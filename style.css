@@ -176,3 +176,25 @@ main > .about {
   border-radius: var(--radius);
 }
 .about-text { flex: 1 1 18rem; min-width: 0; }
+
+/* ---------- Contact ---------- */
+main > .contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 4rem;
+}
+.contact-intro { flex: 1 1 16rem; }
+.contact-form { flex: 1 1 22rem; display: grid; gap: 0.4rem; max-width: 34rem; }
+.contact-form label { font-weight: 600; margin-top: 0.6rem; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  font: inherit;
+  color: inherit;
+  background: var(--color-surface);
+  border: 1px solid #b4c2c0;
+  border-radius: var(--radius);
+}
+.contact-form .btn { justify-self: start; margin-top: 1rem; }
