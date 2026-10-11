@@ -160,3 +160,19 @@ main > .gallery-section { color: #fff; background: var(--color-ink); }
 }
 .service h3 { font-size: 1.4rem; }
 .service p { margin: 0; color: var(--color-muted); }
+
+/* ---------- About (Flexbox) ---------- */
+main > .about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background: var(--color-surface);
+}
+.about-photo {
+  flex: 0 0 18rem;
+  width: 18rem;
+  aspect-ratio: 6 / 7;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.about-text { flex: 1 1 18rem; min-width: 0; }
