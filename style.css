@@ -198,3 +198,17 @@ main > .contact {
   border-radius: var(--radius);
 }
 .contact-form .btn { justify-self: start; margin-top: 1rem; }
+
+/* ---------- Footer (Flexbox) ---------- */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem var(--gutter);
+  color: #b9c7c6;
+  background: var(--color-ink);
+}
+.site-footer p { margin: 0; }
+.social-list { display: flex; gap: 1.25rem; }
