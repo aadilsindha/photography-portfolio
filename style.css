@@ -199,6 +199,18 @@ main > .contact {
 }
 .contact-form .btn { justify-self: start; margin-top: 1rem; }
 
+.form-thanks {
+  display: none;
+  margin: 0 0 1rem;
+  padding: 0.9rem 1rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  background: #dff1e4;
+  border-left: 4px solid #2e8b57;
+  border-radius: var(--radius);
+}
+.form-thanks:target { display: block; }
+
 /* ---------- Footer (Flexbox) ---------- */
 .site-footer {
   display: flex;
