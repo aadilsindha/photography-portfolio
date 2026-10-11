@@ -54,3 +54,59 @@
 .nav-list a:hover { color: var(--color-accent); }
 .nav-cta { padding: 0.4rem 1rem; border: 1px solid var(--color-accent); border-radius: var(--radius); }
 .nav-cta:hover { color: var(--color-ink); background: var(--color-accent); }
+
+/* ---------- Layout helper ----------
+   Sections are full width (so backgrounds reach the edges),
+   but content is held to --max-width and centred using padding. */
+main > section {
+  padding: 4.5rem max(var(--gutter), calc((100% - var(--max-width)) / 2));
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.7rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-ink);
+  background: var(--color-accent);
+  border: 0;
+  border-radius: var(--radius);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover { background: var(--color-accent-dark); }
+
+/* ---------- Hero ---------- */
+main > .hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: min(80vh, 40rem);
+  padding-block: 3rem;
+  overflow: hidden;
+  color: #fff;
+  background: var(--color-ink);
+}
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* dark gradient so the text stays readable on any photo */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 31, 41, 0.9), rgba(15, 31, 41, 0.15) 70%);
+}
+.hero-content { position: relative; z-index: 1; }
+.hero h1 {
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  font-weight: 700;
+  max-width: 16ch;
+}
+.hero p { font-size: 1.15rem; color: #dbe5e4; }
