@@ -1,0 +1,35 @@
+   /* ---------- Reset + variables ---------- */
+   *, *::before, *::after { box-sizing: border-box; }
+
+   :root {
+     --color-ink: #0f1f29;
+     --color-paper: #f2f5f4;
+     --color-surface: #ffffff;
+     --color-text: #16262f;
+     --color-muted: #5a6a72;
+     --color-accent: #e8a33d;
+     --color-accent-dark: #c98621;
+     --color-line: #d5dedd;
+
+     --radius: 6px;
+     --max-width: 72rem;
+     --gutter: 1.25rem;
+     --font-display: "Fraunces", Georgia, serif;
+     --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+   }
+
+   html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+
+   body {
+     margin: 0;
+     font-family: var(--font-body);
+     line-height: 1.65;
+     color: var(--color-text);
+     background: var(--color-paper);
+   }
+
+   img { display: block; max-width: 100%; }
+   h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; margin: 0 0 1rem; }
+   p { margin: 0 0 1rem; max-width: 60ch; }
+   ul { list-style: none; margin: 0; padding: 0; }
+   a { color: inherit; }
