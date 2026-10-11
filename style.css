@@ -148,3 +148,15 @@ main > .gallery-section { color: #fff; background: var(--color-ink); }
 .tile:focus-within figcaption { opacity: 1; }
 .tile--wide { grid-column: span 2; }
 .tile--tall { grid-row: span 2; }
+
+/* ---------- Services (Flexbox) ---------- */
+.service-list { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.service {
+  flex: 1 1 15rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  border-top: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+}
+.service h3 { font-size: 1.4rem; }
+.service p { margin: 0; color: var(--color-muted); }
