@@ -1,136 +1,266 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Your Name | Photography Portfolio</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aadil Sindha | Photography Portfolio</title>
+  <meta name="description" content="Portrait, street and editorial photography in Johannesburg. View the work and book a shoot.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-     <header><header class="site-header">
-  <a class="logo" href="#top">Your Name</a>
-  <nav aria-label="Main">
-    <ul class="nav-list">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact" class="nav-cta">Book a shoot</a></li>
+  <header class="site-header">
+    <a class="logo" href="#top">Aadil Sindha</a>
+    <nav aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Book a shoot</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-img" src="https://picsum.photos/seed/herocity/1800/1000" alt="Johannesburg skyline at golden hour">
+      <div class="hero-content">
+        <p class="pill">Booking now for 2026</p>
+        <h1>Photographs that keep the light as it was.</h1>
+        <p class="lead">Portrait, street and editorial photographer based in Johannesburg.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#work">See the work</a>
+          <a class="btn btn--ghost" href="#contact">Book a shoot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK FACTS (Grid) -->
+    <section class="facts" aria-label="At a glance">
+      <ul class="facts-list">
+        <li><strong>5 years</strong><span>shooting professionally</span></li>
+        <li><strong>200+</strong><span>shoots delivered</span></li>
+        <li><strong>7 days</strong><span>typical turnaround</span></li>
+        <li><strong>Gauteng</strong><span>and travel on request</span></li>
+      </ul>
+    </section>
+
+    <!-- GALLERY (Grid) -->
+    <section id="work" class="gallery-section">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>A mix of street, portrait and landscape frames from the last two years.</p>
+      </div>
+      <div class="gallery">
+        <figure class="tile tile--wide">
+          <img src="https://picsum.photos/seed/city1/1200/800" alt="City street at dusk with long shadows" loading="lazy">
+          <figcaption><span>Dusk, Maboneng</span><small>Street</small></figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://picsum.photos/seed/portrait1/600/900" alt="Portrait of a woman in window light" loading="lazy">
+          <figcaption><span>Window light</span><small>Portrait</small></figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://picsum.photos/seed/land2/800/600" alt="Rolling hills under morning mist" loading="lazy">
+          <figcaption><span>Morning mist</span><small>Landscape</small></figcaption>
+        </figure>
+        <figure class="tile tile--tall">
+          <img src="https://picsum.photos/seed/arch3/600/1000" alt="Concrete stairwell seen from below" loading="lazy">
+          <figcaption><span>Stairwell</span><small>Architecture</small></figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://picsum.photos/seed/market4/800/800" alt="Market stall with hanging fabrics" loading="lazy">
+          <figcaption><span>Market day</span><small>Street</small></figcaption>
+        </figure>
+        <figure class="tile tile--wide">
+          <img src="https://picsum.photos/seed/coast5/1200/700" alt="Rocky coastline at low tide" loading="lazy">
+          <figcaption><span>Low tide</span><small>Landscape</small></figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://picsum.photos/seed/face6/700/900" alt="Close portrait of a man laughing" loading="lazy">
+          <figcaption><span>Laughing</span><small>Portrait</small></figcaption>
+        </figure>
+        <figure class="tile">
+          <img src="https://picsum.photos/seed/wedding8/800/800" alt="Couple walking through a garden at a wedding" loading="lazy">
+          <figcaption><span>The long walk</span><small>Event</small></figcaption>
+        </figure>
+        <figure class="tile tile--tall">
+          <img src="https://picsum.photos/seed/model9/600/1000" alt="Fashion model posing against a plain wall" loading="lazy">
+          <figcaption><span>Studio session</span><small>Editorial</small></figcaption>
+        </figure>
+        <figure class="tile tile--wide">
+          <img src="https://picsum.photos/seed/night10/1200/800" alt="Neon-lit street in the rain at night" loading="lazy">
+          <figcaption><span>After the rain</span><small>Street</small></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVICES (Flexbox) -->
+    <section id="services" class="services">
+      <div class="section-head">
+        <h2>What I shoot</h2>
+        <p>Sample packages. Every shoot is tailored, so ask if you need something different.</p>
+      </div>
+      <ul class="service-list">
+        <li class="service">
+          <h3>Portraits</h3>
+          <p>Studio or on location, with guidance on posing and outfits.</p>
+          <ul class="ticks">
+            <li>1 hour session</li>
+            <li>20 edited images</li>
+            <li>Online gallery</li>
+          </ul>
+          <p class="price">From R1 500</p>
+        </li>
+        <li class="service">
+          <h3>Events</h3>
+          <p>Weddings, launches and parties, covered from start to finish.</p>
+          <ul class="ticks">
+            <li>Up to 6 hours</li>
+            <li>300+ edited images</li>
+            <li>Sneak peek in 48 hours</li>
+          </ul>
+          <p class="price">From R6 000</p>
+        </li>
+        <li class="service">
+          <h3>Editorial</h3>
+          <p>Stories, lookbooks and campaigns for magazines and brands.</p>
+          <ul class="ticks">
+            <li>Half or full day</li>
+            <li>Art direction support</li>
+            <li>Licensing included</li>
+          </ul>
+          <p class="price">Custom quote</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PROCESS (Grid, numbered because it is a real sequence) -->
+    <section class="process">
+      <div class="section-head">
+        <h2>How a shoot works</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Enquire</h3><p>Send the form with your idea, date and location.</p></li>
+        <li><h3>Plan</h3><p>We agree the look, the timing and the package.</p></li>
+        <li><h3>Shoot</h3><p>Relaxed, guided and on schedule.</p></li>
+        <li><h3>Deliver</h3><p>Edited images in a private gallery within a week.</p></li>
+      </ol>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="section-head">
+        <h2>Kind words</h2>
+        <p>Sample reviews. Replace these with real client quotes.</p>
+      </div>
+      <div class="quote-list">
+        <figure class="quote">
+          <blockquote><p>He made us feel at ease straight away, and the photos look like us on our best day.</p></blockquote>
+          <figcaption>Thandi M., portrait client</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>Organised, quiet and quick. We had a full gallery of our launch the next week.</p></blockquote>
+          <figcaption>Sipho K., event client</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote><p>Great eye for light. The editorial set was exactly the mood we asked for.</p></blockquote>
+          <figcaption>Ayesha P., magazine editor</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT (Flexbox) -->
+    <section id="about" class="about">
+      <img class="about-photo" src="https://picsum.photos/seed/me7/600/700" alt="The photographer holding a camera">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>I shoot people and places as they are, with natural light and very little direction. Based in Johannesburg, I work across portraits, events and editorial commissions.</p>
+        <ul class="about-meta">
+          <li><strong>Gear</strong> Mirrorless, prime lenses</li>
+          <li><strong>Style</strong> Natural light, honest colour</li>
+          <li><strong>Languages</strong> English</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ (no JavaScript needed) -->
+    <section id="faq" class="faq">
+      <div class="section-head">
+        <h2>Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>How far in advance should I book?</summary>
+          <p>Two to four weeks is ideal. Weekends fill up first, especially in wedding season.</p>
+        </details>
+        <details>
+          <summary>When do I get my photos?</summary>
+          <p>Portraits within 7 days, events within 2 weeks. A small preview comes sooner.</p>
+        </details>
+        <details>
+          <summary>Do you travel outside Johannesburg?</summary>
+          <p>Yes. Travel costs are added to the quote for shoots outside Gauteng.</p>
+        </details>
+        <details>
+          <summary>Can I print and share the images?</summary>
+          <p>Yes. Personal sharing and printing is included. Commercial use is agreed up front.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-intro">
+        <h2>Book a shoot</h2>
+        <p>Tell me what you have in mind and I'll reply within two days.</p>
+        <ul class="contact-details">
+          <li><strong>Email</strong> hello@example.com</li>
+          <li><strong>Location</strong> Johannesburg, South Africa</li>
+          <li><strong>Hours</strong> Mon to Sat, 08:00 to 17:00</li>
+        </ul>
+      </div>
+      <form action="#form-thanks" method="get" class="contact-form">
+        <p id="form-thanks" class="form-thanks">Thanks! Your request is in. I'll reply within two days.</p>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+
+        <label for="type">Type of shoot</label>
+        <select id="type" name="type">
+          <option>Portrait</option>
+          <option>Event</option>
+          <option>Editorial</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Details</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send request</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Aadil Sindha</p>
+    <ul class="social-list">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Behance</a></li>
+      <li><a href="#top">Back to top</a></li>
     </ul>
-  </nav>
-</header></header>
+  </footer>
 
-    <main id="top">
-
-  <!-- HERO: full-width image with text on top -->
-  <section class="hero">
-    <img class="hero-img" src="https://picsum.photos/seed/herocity/1800/1000" alt="Johannesburg skyline at golden hour">
-    <div class="hero-content">
-      <h1>Photographs that keep the light as it was.</h1>
-      <p>Portrait, street and editorial photographer in Johannesburg.</p>
-      <a class="btn" href="#work">See the work</a>
-    </div>
-  </section>
-
-</main>
-<!-- GALLERY (Grid) -->
-<section id="work" class="gallery-section">
-  <h2>Selected work</h2>
-  <div class="gallery">
-    <figure class="tile tile--wide">
-      <img src="https://picsum.photos/seed/city1/1200/800" alt="City street at dusk with long shadows" loading="lazy">
-      <figcaption>Dusk, Maboneng</figcaption>
-    </figure>
-    <figure class="tile">
-      <img src="https://picsum.photos/seed/portrait1/600/900" alt="Portrait of a woman in window light" loading="lazy">
-      <figcaption>Window light</figcaption>
-    </figure>
-    <figure class="tile">
-      <img src="https://picsum.photos/seed/land2/800/600" alt="Rolling hills under morning mist" loading="lazy">
-      <figcaption>Morning mist</figcaption>
-    </figure>
-    <figure class="tile tile--tall">
-      <img src="https://picsum.photos/seed/arch3/600/1000" alt="Concrete stairwell seen from below" loading="lazy">
-      <figcaption>Stairwell</figcaption>
-    </figure>
-    <figure class="tile">
-      <img src="https://picsum.photos/seed/market4/800/800" alt="Market stall with hanging fabrics" loading="lazy">
-      <figcaption>Market day</figcaption>
-    </figure>
-    <figure class="tile tile--wide">
-      <img src="https://picsum.photos/seed/coast5/1200/700" alt="Rocky coastline at low tide" loading="lazy">
-      <figcaption>Low tide</figcaption>
-    </figure>
-    <figure class="tile">
-      <img src="https://picsum.photos/seed/face6/700/900" alt="Close portrait of a man laughing" loading="lazy">
-      <figcaption>Laughing</figcaption>
-    </figure>
-  </div>
-</section>
-<!-- SERVICES (Flexbox cards) -->
-<section id="services" class="services">
-  <h2>What I shoot</h2>
-  <ul class="service-list">
-    <li class="service">
-      <h3>Portraits</h3>
-      <p>Studio or on location. One hour, 20 edited images.</p>
-    </li>
-    <li class="service">
-      <h3>Events</h3>
-      <p>Weddings, launches and parties, covered start to finish.</p>
-    </li>
-    <li class="service">
-      <h3>Editorial</h3>
-      <p>Stories and campaigns for magazines and brands.</p>
-    </li>
-  </ul>
-</section>
-<!-- ABOUT (Flexbox) -->
-<section id="about" class="about">
-  <img class="about-photo" src="https://picsum.photos/seed/me7/600/700" alt="The photographer holding a camera">
-  <div class="about-text">
-    <h2>About</h2>
-    <p>I shoot people and places as they are, with natural light and very little direction. Five years of freelance work, from weddings to magazine features.</p>
-  </div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="contact-intro">
-    <h2>Book a shoot</h2>
-    <p>Tell me what you have in mind and I'll reply within two days.</p>
-  </div>
-  <form action="#form-thanks" method="get" class="contact-form">
-  <p id="form-thanks" class="form-thanks">Thanks! Your request is in. I'll reply within two days.</p>
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text" required autocomplete="name">
-
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" required autocomplete="email">
-
-    <label for="type">Type of shoot</label>
-    <select id="type" name="type">
-      <option>Portrait</option>
-      <option>Event</option>
-      <option>Editorial</option>
-      <option>Other</option>
-    </select>
-
-    <label for="message">Details</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button class="btn" type="submit">Send request</button>
-  </form>
-</section>
-    <footer class="site-footer">
-  <p>&copy; 2026 Your Name</p>
-  <ul class="social-list">
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">Behance</a></li>
-  </ul>
-</footer>
-
-   </body>
-   </html>
+</body>
+</html>
